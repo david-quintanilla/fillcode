@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SwatchLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="skyward" xmlns="http://schemas.microsoft.com/expression/design/2007">
+	<SolidColorSwatch Color="#FFEEA910" />
+	<SolidColorSwatch Color="#FFFAFAFA" />
+	<SolidColorSwatch Color="#FF83A4C3" />
+	<SolidColorSwatch Color="#FF474D59" />
+	<SolidColorSwatch Color="#FF141A26" />
+</SwatchLibrary>

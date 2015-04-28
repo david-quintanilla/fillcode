@@ -1,0 +1,50 @@
+
+@import 'normalize.styl'
+@import 'icons.styl'
+@import 'globals.styl'
+
+/**
+ * ---------------------------------------------------------------------------
+ * Header home and default pages
+ * ---------------------------------------------------------------------------
+ */
+ .header
+ 	position relative
+ 	.icon-menu
+ 		color pineapple
+ 		font-size 3rem
+ 		position absolute
+ 		right 3rem
+ 		top 1.5rem
+ 	.icon-menu:focus + .header__nav
+ 		display block
+ 	&__section
+ 		background platonic_nonsense
+ 		padding 1.5rem
+ 	&__section .title
+ 		color pineapple
+ 		font-size 2rem
+ 		margin 0
+ 	&__section .legend
+ 		color rgba(almost_white .7)
+ 		margin 0
+ 	&__nav
+ 		background black_navy
+ 		display none
+ 		.menu
+ 			font-weight bold
+ 			list-style-type none
+ 			margin 0
+ 			padding 0
+ 		.menu__item
+ 			color white
+ 			padding 1rem 2rem
+ 			&:first-child
+ 				margin 0
+ 				padding-top 1rem
+ 			&:hover
+ 				background rgba(pineapple .9)
+ 				color black
+ 				transition all .5s ease
+ 			span
+ 				font-size 1rem

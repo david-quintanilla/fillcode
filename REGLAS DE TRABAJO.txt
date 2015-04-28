@@ -1,0 +1,58 @@
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+- Avisar siempre que se haga un push al servidor.
+
+- Evitar trabajar con el mismo archivo al mismo tiempo.
+
+- Comentar todo lo que se haga.
+
+- Formato de commits:  fecha (dd/mm/yyyy)  titulo -> descripción  
+
+- SCRUM (que hicimos ayer/ que haremos hoy/ hacia donde vamos)
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+
+GUIAS DE ESTILO
+--------------------------------------------------------------------------------------------
+ Stylus
+--------------------------------------------------------------------------------------------
+
+/**
+* ------------------------------------------------------------------------------------------
+*  Esto es un comentario
+* ------------------------------------------------------------------------------------------
+*/
+
+
+ - Trabajar por bloques.
+ - Utilizar preprocesador stylus.
+ - Utilizar sintaxis BEM
+ - Tanto selectores como propiedades tienen que ir ordenadas alfabeticamente.
+ - Comentarios en español
+ - Nombres selectores y demas en ingles.
+ - No usar IDS para diseño.
+ - Si se colocan IDS para programacion javascript colocar prefijo JS- 
+   
+--------------------------------------------------------------------------------------------
+ HTML
+--------------------------------------------------------------------------------------------
+
+ - Comentarios al inicio de un bloque o cuando se crean necesarios.
+ - Trabajar con etiquetas html5
+ 
+
+
+--------------------------------------------------------------------------------------------
+Estructura proyecto
+--------------------------------------------------------------------------------------------
+ - resources
+    - assets
+    - app 
+    
+ - public 
+    - fonts
+    - css
+    - img
+    - js
+  

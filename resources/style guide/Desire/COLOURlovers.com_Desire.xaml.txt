@@ -1,0 +1,6 @@
+<!-- Paste this content in the Application.Resources section of App.xaml -->
+<SolidColorBrush x:Key="Brush1" Color="#FF962129" />
+<SolidColorBrush x:Key="Brush2" Color="#FFB63F43" />
+<SolidColorBrush x:Key="Brush3" Color="#FF313E47" />
+<SolidColorBrush x:Key="Brush4" Color="#FF31353E" />
+<SolidColorBrush x:Key="Brush5" Color="#FF2A313B" />
