@@ -282,3 +282,17 @@ body {
 .header__nav .menu__item span {
   font-size: 1rem;
 }
+/**
+ * ---------------------------------------------------------------------------
+ * Header home and default pages
+ * ---------------------------------------------------------------------------
+ */
+.footer {
+  background-color: #141a26;
+  border-top: 6px solid #eea910;
+  color: #83a4c3;
+  height: 10rem;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
