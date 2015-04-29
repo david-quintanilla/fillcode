@@ -40,7 +40,7 @@
 				after y before del pseudolemento... 
 			</p>
 			<footer class="post__footer">
-				David - 29/04/2015
+				<span class="icon-user"></span> David - 29/04/2015
 			</footer>
 		</article>	
 
@@ -57,7 +57,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
 			</p>
 			<footer class="post__footer">
-				David - 29/04/2015
+				<span class="icon-user"></span> David - 29/04/2015
 			</footer>
 		</article>
 
@@ -75,7 +75,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
 			</p>
 			<footer class="post__footer">
-				David - 29/04/2015
+				<span class="icon-user"></span> Jerson - 29/04/2015
 			</footer>
 		</article>
 
@@ -93,7 +93,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
 			</p>
 			<footer class="post__footer">
-				David - 29/04/2015
+				<span class="icon-user"></span> David - 29/04/2015
 			</footer>
 		</article>
 
@@ -111,7 +111,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
 			</p>
 			<footer class="post__footer">
-				David - 29/04/2015
+				<span class="icon-user"></span> Jerson - 29/04/2015
 			</footer>
 		</article>
 
