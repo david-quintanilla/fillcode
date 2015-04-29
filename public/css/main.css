@@ -227,7 +227,7 @@ body {
 }
 /**
  * ---------------------------------------------------------------------------
- * Header home and default pages
+ * Module header home page
  * ---------------------------------------------------------------------------
  */
 .header {
@@ -284,15 +284,89 @@ body {
 }
 /**
  * ---------------------------------------------------------------------------
- * Header home and default pages
+ * Module post home page
+ * ---------------------------------------------------------------------------
+ */
+.container__posts {
+  padding: 1rem;
+}
+.container__posts .post {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.container__posts .post__type {
+  background: #eea910;
+  border-radius: 50%;
+  color: #141a26;
+  font-weight: bold;
+  height: 2rem;
+  padding: 1rem;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  text-align: center;
+  width: 2rem;
+  z-index: 8;
+}
+.container__posts .post__type span {
+  display: block;
+  margin-top: 0.4rem;
+}
+.container__posts .post__type:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.container__posts .post__image {
+  border-radius: 15px;
+  margin: 0;
+  position: relative;
+}
+.container__posts .post__image img {
+  border-radius: 15px;
+  width: 100%;
+}
+.container__posts .post__image .description {
+  background: rgba(0,0,0,0.8);
+  border-top: 5px solid #eea910;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  bottom: 0.3rem;
+  color: rgba(238,169,16,0.8);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+}
+.container__posts .post__image .description p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container__posts .post__content {
+  background: rgba(131,164,195,0.7);
+  margin: 0 0.5rem;
+  margin-top: -0.3rem;
+  padding: 0.5rem;
+}
+.container__posts .post__footer {
+  background: #141a26;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgba(255,255,255,0.8);
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+/**
+ * ---------------------------------------------------------------------------
+ * Module footer home page
  * ---------------------------------------------------------------------------
  */
 .footer {
-  background-color: #141a26;
+  background: #141a26;
   border-top: 6px solid #eea910;
   color: #83a4c3;
   height: 10rem;
   padding: 10px;
-  position: absolute;
   bottom: 0;
 }

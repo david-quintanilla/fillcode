@@ -26,16 +26,113 @@
 
 
 	<!-- content website -->
-	<section class="">
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
-		<article></article>
+	<section class="container__posts">
+		<article class="post">
+			<div class="post__type"> <span>CSS</span> </div>
+			<figure class="post__image">
+				<img src="img/wolf.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Aprenderemos a crear un DIV facilmente usando CSS, con tan solo la propiedad
+				after y before del pseudolemento... 
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>	
+
+			
+		<article class="post">
+			<div class="post__type"> <span>JS</span> </div>
+			<figure class="post__image">
+				<img src="img/post.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>
+
+
+			
+		<article class="post">
+			<div class="post__type"> <span>HTML</span> </div>
+			<figure class="post__image">
+				<img src="img/1.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>
+
+
+			
+		<article class="post">
+			<div class="post__type"> <span>HTML</span> </div>
+			<figure class="post__image">
+				<img src="img/2.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>
+
+
+			
+		<article class="post">
+			<div class="post__type"> <span>CSS</span> </div>
+			<figure class="post__image">
+				<img src="img/3.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>
+
+
+			
+		<article class="post">
+			<div class="post__type"> <span>CSS</span> </div>
+			<figure class="post__image">
+				<img src="img/wolf.jpg" alt="wolf style">
+				<div class="description"> 
+					<p> Como crear un DIV en css facíl </p>
+				</div>
+			</figure>
+			<p class="post__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias ut beatae natus nobis eius perferendis. Vitae quod, deleniti suscipit consequatur rem ipsum quia sint ipsam, consectetur commodi natus! Odio?
+			</p>
+			<footer class="post__footer">
+				David - 29/04/2015
+			</footer>
+		</article>
+
 	</section>
 
 
