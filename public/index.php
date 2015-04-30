@@ -138,12 +138,15 @@
 
 	<!-- footer website -->
 	<footer class="footer">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="footer__social">
+			<a href=""><span class="icon-twitter"></span></a>
+			<a href=""><span class="icon-facebook"></span></a>
+			<a href=""><span class="icon-twitter"></span></a>
+			<a href=""><span class="icon-google-plus"></span></a>
+		</div>
+		<div class="footer__copyright">
+			&copy; 2015. Fillcode - Todos los derechos reservados.
+		</div>
 	</footer>
 </body>
 </html>
