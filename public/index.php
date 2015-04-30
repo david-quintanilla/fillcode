@@ -145,7 +145,10 @@
 			<a href=""><span class="icon-google-plus"></span></a>
 		</div>
 		<div class="footer__copyright">
-			&copy; 2015. Fillcode - Todos los derechos reservados.
+			<p>
+				&copy; 2015. Fillcode<br> 
+				Todos los derechos reservados.
+			</p>
 		</div>
 	</footer>
 </body>
