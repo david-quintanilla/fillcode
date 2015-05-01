@@ -14,7 +14,7 @@
  		color pineapple
  		font-size 3rem
  		position absolute
- 		right 3rem
+ 		right 1rem
  		top 1.5rem
  	.icon-menu:focus + .header__nav
  		display block
@@ -116,9 +116,65 @@
 			span
 				font-size 1.2rem
 				margin-right .2rem
-				
-
-
+	.post2
+		position relative
+		margin-bottom 2rem
+		&__image
+			font-size 0
+			margin 0
+			position relative
+			img
+				border-top-left-radius 20px
+				border-top-right-radius 20px
+				width 100%
+			.type
+				background pineapple
+				border-radius 50%
+				color platonic_nonsense
+				font-weight bold
+				height 3rem
+				padding 1rem
+				position absolute
+				right .5rem
+				top .5rem
+				text-align center
+				width 3rem
+				z-index 8
+				span
+					display inline-block
+					font-size 1.2rem
+					margin-top .6rem
+					margin-left -.2rem
+				&:hover
+					color white
+					transition all .5s ease
+			.info
+				background rgba(black .7)
+				border-top .3rem solid pineapple
+				color white
+				padding 2rem 1rem
+				position absolute
+				bottom 0
+				left 0 
+				right 0
+				.title
+					margin 0
+					bottom 0
+					color pineapple
+					font-size 1.5rem
+				.author
+					color white
+					font-size 1rem
+					z-index 20
+		&__footer
+			background pineapple
+			border-bottom-left-radius 15px
+			border-bottom-right-radius 15px
+			display block
+			margin 0
+			padding .5rem 1rem
+			.content
+				margin 0
 /**
  * ---------------------------------------------------------------------------
  * Module footer home page
@@ -126,7 +182,7 @@
  */
  .footer
  	background platonic_nonsense
- 	border-top 2rem solid pineapple
+ 	border-top 1rem solid pineapple
  	color watercolour 	
  	bottom 0
  	&__social 		 		 		
@@ -138,8 +194,8 @@
  			text-decoration none 			
  		span
  			display inline-block
- 			font-size 6rem
- 			margin 0 1.0rem 
+ 			font-size 2rem
+ 			margin 0 .3rem 
  			&:hover 				
  				color pineapple 				
  				transform scale(1.4)
