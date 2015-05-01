@@ -18,6 +18,7 @@
  		top 1.5rem
  	.icon-menu:focus + .header__nav
  		display block
+ 		transition all 2s ease
  	&__section
  		background platonic_nonsense
  		padding 1.5rem
@@ -56,66 +57,6 @@
  */
 .container__posts
 	padding 1rem
-	.post
-		border-radius 15px
-		margin-bottom 1rem
-		position relative
-		&__type
-			background pineapple
-			border-radius 50%
-			color platonic_nonsense
-			font-weight bold
-			height 2rem
-			padding 1rem
-			position absolute
-			right -.5rem
-			top -.5rem
-			text-align center
-			width 2rem
-			z-index 8
-			span
-				display block
-				margin-top .4rem
-			&:hover
-				color white
-				transition all .5s ease
-		&__image
-			border-radius 15px
-			margin 0
-			position relative
-			img
-				border-radius 15px
-				width 100%
-			.description
-				background rgba(black .8)
-				border-top 5px solid pineapple
-				border-bottom-left-radius 15px
-				border-bottom-right-radius 15px
-				bottom .3rem
-				color rgba(pineapple .8)
-				font-size 1.5rem
-				text-transform uppercase
-				position absolute
-				width 100%
-				max-width 100%
-				p
-					padding-left 1rem
-					padding-right 1rem
-		&__content
-			background rgba(watercolour .7)
-			margin 0 .5rem
-			margin-top -.3rem
-			padding .5rem
-		&__footer
-			background platonic_nonsense
-			border-bottom-left-radius 10px
-			border-bottom-right-radius 10px
-			color rgba(white .8)
-			margin 0 .5rem
-			padding .5rem
-			span
-				font-size 1.2rem
-				margin-right .2rem
 	.post2
 		position relative
 		margin-bottom 2rem
@@ -135,8 +76,8 @@
 				height 3rem
 				padding 1rem
 				position absolute
-				right .5rem
-				top .5rem
+				right -.5rem
+				top -.5rem
 				text-align center
 				width 3rem
 				z-index 8

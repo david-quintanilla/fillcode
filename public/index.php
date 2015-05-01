@@ -34,7 +34,7 @@
 		<article class="post2">
 			<figure class="post2__image">
 				<div class="type"> <span>Jquery</span> </div>
-				<img src="img/2.jpg" alt="wolf style">
+				<img src="img/1.jpg" alt="wolf style">
 				<div class="info">
 					<h2 class="title"> Como montar una web </h2>
 					<div class="author"><span class="icon-user"></span> David - 29/04/2015 </div>
@@ -49,23 +49,24 @@
 			</footer>
 		</article>
 
-
-		<article class="post">
-			<div class="post__type"> <span>CSS</span> </div>
-			<figure class="post__image">
-				<img src="img/wolf.jpg" alt="wolf style">
-				<div class="description"> 
-					<p> Como crear un DIV en css facíl </p>
+		<!-- 2 demo article -->
+		<article class="post2">
+			<figure class="post2__image">
+				<div class="type"> <span>Jquery</span> </div>
+				<img src="img/1.jpg" alt="wolf style">
+				<div class="info">
+					<h2 class="title"> Como montar una web </h2>
+					<div class="author"><span class="icon-user"></span> David - 29/04/2015 </div>
 				</div>
-			</figure>
-			<p class="post__content">
-				Aprenderemos a crear un DIV facilmente usando CSS, con tan solo la propiedad
-				after y before del pseudolemento... 
-			</p>
-			<footer class="post__footer">
-				<span class="icon-user"></span> David - 29/04/2015
+			</figure>			
+
+			<footer class="post2__footer">
+				<p class="content"> 
+					Aprenderemos a crear un DIV facilmente usando CSS, con tan solo la propiedad
+					after y before del pseudolemento...
+				</p>
 			</footer>
-		</article>	
+		</article>
 
 	</section>
 
