@@ -1,7 +1,18 @@
 
+/*
+*Theme Name: Fillcode
+*Theme URI: http://fillcode.com
+*Author URI: http://fillcode.com
+*Author: David Quintanilla / Jerson Moreno
+*Description: theme awesome creatives posts
+*version: 1.0
+*/
+
+@import 'nib'
 @import 'normalize.styl'
 @import 'icons.styl'
 @import 'globals.styl'
+
 
 /**
  * ---------------------------------------------------------------------------
@@ -16,9 +27,6 @@
  		position absolute
  		right 1rem
  		top 1.5rem
- 	.icon-menu:focus + .header__nav
- 		display block
- 		transition all 2s ease
  	&__section
  		background platonic_nonsense
  		padding 1.5rem
@@ -29,9 +37,14 @@
  	&__section .legend
  		color rgba(almost_white .7)
  		margin 0
+ 	.icon-menu:focus + .header__nav
+		display block
+		right 0
+		left 0
  	&__nav
- 		background black_navy
+		background rgba(black .7)
  		display none
+		z-index 50
  		.menu
  			font-weight bold
  			list-style-type none
@@ -57,7 +70,7 @@
  */
 .container__posts
 	padding 1rem
-	.post2
+	.post
 		position relative
 		margin-bottom 2rem
 		&__image
@@ -65,52 +78,55 @@
 			margin 0
 			position relative
 			img
-				border-top-left-radius 20px
-				border-top-right-radius 20px
-				width 100%
+				background cover
 			.type
-				background pineapple
+				background white
 				border-radius 50%
 				color platonic_nonsense
 				font-weight bold
 				height 3rem
-				padding 1rem
+				padding .5rem
 				position absolute
-				right -.5rem
-				top -.5rem
+				right -.7rem
+				top -.7rem
 				text-align center
 				width 3rem
 				z-index 8
 				span
 					display inline-block
-					font-size 1.2rem
-					margin-top .6rem
-					margin-left -.2rem
+					font-size 1rem
+					margin-top .8rem
+					margin-left -.1rem
 				&:hover
 					color white
 					transition all .5s ease
 			.info
-				background rgba(black .7)
-				border-top .3rem solid pineapple
+				background rgba(black .5)
 				color white
-				padding 2rem 1rem
+				padding .5rem 1rem
 				position absolute
 				bottom 0
+				top 0
 				left 0 
 				right 0
 				.title
-					margin 0
+					margin-top 4rem
 					bottom 0
-					color pineapple
+					color white
 					font-size 1.5rem
+					font-weight 400
+					text-transform uppercase
 				.author
 					color white
 					font-size 1rem
+					bottom .5rem
+					right 1rem
+					position absolute
 					z-index 20
 		&__footer
-			background pineapple
-			border-bottom-left-radius 15px
-			border-bottom-right-radius 15px
+			background rgba(black .1)
+			border-bottom-left-radius 5px
+			border-bottom-right-radius 5px
 			display block
 			margin 0
 			padding .5rem 1rem

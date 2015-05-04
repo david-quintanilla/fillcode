@@ -14,8 +14,8 @@ var remember   = require('gulp-remember');
 
 //rutas de busqueda
 var busqueda = {
-	css    : ['../../public/css/main.css'],
-	stylus : [ 'stylus/main.styl'],
+	css    : ['../../public/css/style.css'],
+	stylus : [ 'stylus/style.styl'],
 };
 
 //rutas de destino
@@ -29,7 +29,7 @@ gulp.task('stylus', function()
 {
 	gulp.src(busqueda.stylus)
 		.pipe(cached('stylus'))
-		.pipe(stylus())
+		.pipe(stylus({ use : nib() }))
 		.pipe(remember('stylus'))
 		.pipe(gulp.dest(destino.css));
 });
@@ -42,7 +42,7 @@ gulp.task('css', function()
 		.pipe(cached('css'))
 		.pipe(minifycss({keepBreaks:false}))
 		.pipe(remember('css'))
-		.pipe(concat('styles.min.css'))
+		.pipe(concat('style.min.css'))
 		.pipe(gulp.dest(destino.css))
 		.pipe(notify('file css compressed!!!'))
 		.pipe(liveReload());
