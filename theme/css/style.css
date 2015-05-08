@@ -428,6 +428,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 /**
  * ---------------------------------------------------------------------------
  * Module header home page
@@ -443,6 +449,11 @@ body {
   right: 1rem;
   top: 1.5rem;
 }
+.header:focus + .header__nav {
+  display: block;
+  right: 0;
+  left: 0;
+}
 .header__section {
   background: #141a26;
   padding: 1.5rem;
@@ -456,29 +467,25 @@ body {
   color: rgba(250,250,250,0.7);
   margin: 0;
 }
-.header .icon-menu:focus + .header__nav,
-.header display block,
-.header right 0,
-.header left 0,
-.header__nav,
-.header background rgba(black .7) {
-  display: none;
+.header__nav {
+  background: #f00;
+  z-index: 50;
 }
-.header z-index 50 .menu {
+.header .menu {
   font-weight: bold;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.header z-index 50 .menu__item {
+.header .menu__item {
   color: #fff;
   padding: 1rem 2rem;
 }
-.header z-index 50 .menu__item:first-child {
+.header .menu__item:first-child {
   margin: 0;
   padding-top: 1rem;
 }
-.header z-index 50 .menu__item:hover {
+.header .menu__item:hover {
   background: rgba(238,169,16,0.9);
   color: #000;
   -webkit-transition: all 0.5s ease;
@@ -487,7 +494,7 @@ body {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.header z-index 50 .menu__item span {
+.header .menu__item span {
   font-size: 1rem;
 }
 /**
@@ -502,15 +509,12 @@ body {
   position: relative;
   margin-bottom: 2rem;
 }
-.container__posts .post__image {
+.container__posts .post__header {
   font-size: 0;
   margin: 0;
   position: relative;
 }
-.container__posts .post__image img {
-  background: cover;
-}
-.container__posts .post__image .type {
+.container__posts .post__header .type {
   background: #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -525,13 +529,13 @@ body {
   width: 3rem;
   z-index: 8;
 }
-.container__posts .post__image .type span {
+.container__posts .post__header .type span {
   display: inline-block;
   font-size: 1rem;
   margin-top: 0.8rem;
   margin-left: -0.1rem;
 }
-.container__posts .post__image .type:hover {
+.container__posts .post__header .type:hover {
   color: #fff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -539,7 +543,7 @@ body {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.container__posts .post__image .info {
+.container__posts .post__header .info {
   background: rgba(0,0,0,0.5);
   color: #fff;
   padding: 0.5rem 1rem;
@@ -549,7 +553,7 @@ body {
   left: 0;
   right: 0;
 }
-.container__posts .post__image .info .title {
+.container__posts .post__header .info .title {
   margin-top: 4rem;
   bottom: 0;
   color: #fff;
@@ -557,13 +561,30 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-.container__posts .post__image .info .author {
+.container__posts .post__header .info .author {
   color: #fff;
   font-size: 1rem;
   bottom: 0.5rem;
   right: 1rem;
   position: absolute;
   z-index: 20;
+}
+.container__posts .post__header .info .link {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.container__posts .post__image {
+  text-align: center;
+  margin: 0;
+}
+.container__posts .post__image img {
+  background: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
 }
 .container__posts .post__footer {
   background: rgba(0,0,0,0.1);

@@ -28,18 +28,17 @@
 
 	<!-- content website -->
 	<section class="container__posts">
-
-
-		<!-- 2 demo article -->
 		<article class="post">
-			<figure class="post__image">
+			<header class="post__header">
 				<div class="type"> <span>Jquery</span> </div>
-				<img src="img/3.jpg" alt="wolf style">
+				<figure class="post__image">
+					<img src="img/3.jpg" alt="wolf style">
+				</figure>			
 				<div class="info">
 					<h2 class="title"> Como montar una web </h2>
 					<div class="author"><span class="icon-user"></span> David - 29/04/2015 </div>
 				</div>
-			</figure>			
+			</header>
 
 			<footer class="post__footer">
 				<p class="content"> 
@@ -48,26 +47,6 @@
 				</p>
 			</footer>
 		</article>
-
-		<!-- 2 demo article -->
-		<article class="post">
-			<figure class="post__image">
-				<div class="type"> <span>Jquery</span> </div>
-				<img src="img/1.jpg" alt="wolf style">
-				<div class="info">
-					<h2 class="title"> Display inline block </h2>
-					<div class="author"><span class="icon-user"></span> David - 29/04/2015 </div>
-				</div>
-			</figure>			
-
-			<footer class="post__footer">
-				<p class="content"> 
-					Esta magnifica propiedad y sus grandes beneficios, aprenderemos a usarla y saber 
-					cuando es recomendada
-				</p>
-			</footer>
-		</article>
-
 	</section>
 
 

@@ -1,5 +1,4 @@
 
-<!-- header website -->
 <?php get_header() ?>
 
 
@@ -34,7 +33,7 @@
 				</header>
 
 				<footer class="post__footer">
-					<p class="content"> <?= the_excerpt() ?></p>
+					<p class="content"> <?php the_content() ?></p>
 				</footer>
 			</article>
 		<?php endwhile ?>
@@ -46,5 +45,4 @@
 	</section>
 
 
-<!-- footer website -->
 <?php get_footer() ?>

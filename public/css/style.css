@@ -428,6 +428,247 @@ body {
   margin: 0;
   padding: 0;
 }
+.show {
+  display: block !important;
+  -webkit-animation-name: opacity-transition;
+  -moz-animation-name: opacity-transition;
+  -o-animation-name: opacity-transition;
+  -ms-animation-name: opacity-transition;
+  animation-name: opacity-transition;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+}
+@-moz-keyframes opacity-transition {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  10% {
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+  }
+  20% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  30% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+  }
+  40% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+  50% {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  60% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+  70% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+  }
+  80% {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+  90% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes opacity-transition {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  10% {
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+  }
+  20% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  30% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+  }
+  40% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+  50% {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  60% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+  70% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+  }
+  80% {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+  90% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes opacity-transition {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  10% {
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+  }
+  20% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  30% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+  }
+  40% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+  50% {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  60% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+  70% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+  }
+  80% {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+  90% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes opacity-transition {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  10% {
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+  }
+  20% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  30% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+  }
+  40% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+  50% {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  60% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+  70% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+  }
+  80% {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+  90% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
 /**
  * ---------------------------------------------------------------------------
  * Module header home page
@@ -446,6 +687,7 @@ body {
 .header__section {
   background: #141a26;
   padding: 1.5rem;
+  position: relative;
 }
 .header__section .title {
   color: #eea910;
@@ -456,29 +698,33 @@ body {
   color: rgba(250,250,250,0.7);
   margin: 0;
 }
-.header .icon-menu:focus + .header__nav,
-.header display block,
-.header right 0,
-.header left 0,
-.header__nav,
-.header background rgba(black .7) {
-  display: none;
+.header__section .link {
+  display: block;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  z-index: 10;
 }
-.header z-index 50 .menu {
+.header__nav {
+  display: none;
+  background: rgba(0,0,0,0.7);
+}
+.header__nav .menu {
   font-weight: bold;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.header z-index 50 .menu__item {
+.header__nav .menu__item {
   color: #fff;
   padding: 1rem 2rem;
 }
-.header z-index 50 .menu__item:first-child {
+.header__nav .menu__item:first-child {
   margin: 0;
   padding-top: 1rem;
 }
-.header z-index 50 .menu__item:hover {
+.header__nav .menu__item:hover {
   background: rgba(238,169,16,0.9);
   color: #000;
   -webkit-transition: all 0.5s ease;
@@ -487,7 +733,7 @@ body {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.header z-index 50 .menu__item span {
+.header__nav .menu__item span {
   font-size: 1rem;
 }
 /**
@@ -502,15 +748,12 @@ body {
   position: relative;
   margin-bottom: 2rem;
 }
-.container__posts .post__image {
+.container__posts .post__header {
   font-size: 0;
   margin: 0;
   position: relative;
 }
-.container__posts .post__image img {
-  background: cover;
-}
-.container__posts .post__image .type {
+.container__posts .post__header .type {
   background: #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -525,13 +768,13 @@ body {
   width: 3rem;
   z-index: 8;
 }
-.container__posts .post__image .type span {
+.container__posts .post__header .type span {
   display: inline-block;
   font-size: 1rem;
   margin-top: 0.8rem;
   margin-left: -0.1rem;
 }
-.container__posts .post__image .type:hover {
+.container__posts .post__header .type:hover {
   color: #fff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -539,7 +782,7 @@ body {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.container__posts .post__image .info {
+.container__posts .post__header .info {
   background: rgba(0,0,0,0.5);
   color: #fff;
   padding: 0.5rem 1rem;
@@ -549,7 +792,7 @@ body {
   left: 0;
   right: 0;
 }
-.container__posts .post__image .info .title {
+.container__posts .post__header .info .title {
   margin-top: 4rem;
   bottom: 0;
   color: #fff;
@@ -557,13 +800,30 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-.container__posts .post__image .info .author {
+.container__posts .post__header .info .author {
   color: #fff;
   font-size: 1rem;
   bottom: 0.5rem;
   right: 1rem;
   position: absolute;
   z-index: 20;
+}
+.container__posts .post__header .info .link {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.container__posts .post__image {
+  text-align: center;
+  margin: 0;
+}
+.container__posts .post__image img {
+  background: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
 }
 .container__posts .post__footer {
   background: rgba(0,0,0,0.1);

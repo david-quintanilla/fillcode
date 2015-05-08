@@ -14,13 +14,16 @@ var remember   = require('gulp-remember');
 
 //rutas de busqueda
 var busqueda = {
-	css    : ['../../public/css/style.css'],
-	stylus : [ 'stylus/style.styl'],
+	css    : '../../public/css/style.css',
+	stylus : 'stylus/style.styl',
+	js     : 'js/*'
 };
 
 //rutas de destino
 var destino = {
-	css  : '../../public/css'
+	css       : '../../public/css',
+	cssTheme  : '../../theme/css/',
+	jsTheme   : '../../theme/js/'
 };
 
 
@@ -28,9 +31,7 @@ var destino = {
 gulp.task('stylus', function()
 {
 	gulp.src(busqueda.stylus)
-		.pipe(cached('stylus'))
 		.pipe(stylus({ use : nib() }))
-		.pipe(remember('stylus'))
 		.pipe(gulp.dest(destino.css));
 });
 
@@ -43,9 +44,18 @@ gulp.task('css', function()
 		.pipe(minifycss({keepBreaks:false}))
 		.pipe(remember('css'))
 		.pipe(concat('style.min.css'))
-		.pipe(gulp.dest(destino.css))
-		.pipe(notify('file css compressed!!!'))
+		.pipe(gulp.dest(destino.cssTheme))
+		.pipe(notify('css success!!!'))
 		.pipe(liveReload());
+});
+
+gulp.task('js', function()
+{
+	gulp.src(busqueda.js)
+		.pipe(uglify())
+		.pipe(concat('fillcode.min.js'))
+		.pipe(gulp.dest(destino.jsTheme))
+		.pipe(notify('script success!!!'));
 });
 
 
@@ -55,6 +65,7 @@ gulp.task('watch', function()
 	liveReload.listen();
 	gulp.watch(busqueda.stylus, ['stylus']);
 	gulp.watch(busqueda.css, ['css']);
+	gulp.watch(busqueda.js, ['js']);
 });
 
 //tareas que se ejecutaran por defecto

@@ -1,4 +1,3 @@
-
 /*
 *Theme Name: Fillcode
 *Theme URI: http://fillcode.com
@@ -14,54 +13,58 @@
 @import 'globals.styl'
 
 
+
 /**
  * ---------------------------------------------------------------------------
  * Module header home page
  * ---------------------------------------------------------------------------
  */
- .header
- 	position relative
- 	.icon-menu
- 		color pineapple
- 		font-size 3rem
- 		position absolute
- 		right 1rem
- 		top 1.5rem
- 	&__section
- 		background platonic_nonsense
- 		padding 1.5rem
- 	&__section .title
- 		color pineapple
- 		font-size 2rem
- 		margin 0
- 	&__section .legend
- 		color rgba(almost_white .7)
- 		margin 0
- 	.icon-menu:focus + .header__nav
-		display block
-		right 0
-		left 0
- 	&__nav
+.header
+	position relative
+	.icon-menu
+		color pineapple
+		font-size 3rem
+		position absolute
+		right 1rem
+		top 1.5rem
+	&__section
+		background platonic_nonsense
+		padding 1.5rem
+		position relative
+		.title
+			color pineapple
+			font-size 2rem
+			margin 0
+		.legend
+			color rgba(almost_white .7)
+			margin 0
+		.link
+			display block
+			height 100px
+			position absolute
+			top 0
+			width 200px
+			z-index 10
+	&__nav
+		display none
 		background rgba(black .7)
- 		display none
-		z-index 50
- 		.menu
- 			font-weight bold
- 			list-style-type none
- 			margin 0
- 			padding 0
- 		.menu__item
- 			color white
- 			padding 1rem 2rem
- 			&:first-child
- 				margin 0
- 				padding-top 1rem
- 			&:hover
- 				background rgba(pineapple .9)
- 				color black
- 				transition all .5s ease
- 			span
- 				font-size 1rem
+		.menu
+			font-weight bold
+			list-style-type none
+			margin 0
+			padding 0
+		.menu__item
+			color white
+			padding 1rem 2rem
+			&:first-child
+				margin 0
+				padding-top 1rem
+			&:hover
+				background rgba(pineapple .9)
+				color black
+				transition all .5s ease
+			span
+				font-size 1rem
  				
 /**
  * ---------------------------------------------------------------------------
@@ -73,12 +76,10 @@
 	.post
 		position relative
 		margin-bottom 2rem
-		&__image
+		&__header
 			font-size 0
 			margin 0
 			position relative
-			img
-				background cover
 			.type
 				background white
 				border-radius 50%
@@ -123,6 +124,20 @@
 					right 1rem
 					position absolute
 					z-index 20
+				.link
+					position absolute
+					bottom 0
+					top 0
+					left 0 
+					right 0
+		&__image
+			text-align center
+			margin 0
+			img
+				background cover
+				height auto
+				width 100%
+				max-width 100%
 		&__footer
 			background rgba(black .1)
 			border-bottom-left-radius 5px
@@ -137,27 +152,27 @@
  * Module footer home page
  * ---------------------------------------------------------------------------
  */
- .footer
- 	background platonic_nonsense
- 	border-top 1rem solid pineapple
- 	color watercolour 	
- 	bottom 0
- 	&__social 		 		 		
- 		margin 0
- 		padding 4rem 0 0 0
- 		text-align center 		 		
- 		a
- 			color white
- 			text-decoration none 			
- 		span
- 			display inline-block
- 			font-size 2rem
- 			margin 0 .3rem 
- 			&:hover 				
- 				color pineapple 				
- 				transform scale(1.4)
- 				transition all 0.7s ease-out 				
- 	&__copyright
- 		color watercolour
- 		padding 0.5rem 0 4rem 0
- 		text-align center			
+.footer
+	background platonic_nonsense
+	border-top 1rem solid pineapple
+	color watercolour
+	bottom 0
+	&__social
+		margin 0
+		padding 4rem 0 0 0
+		text-align center
+		a
+			color white
+			text-decoration none
+		span
+			display inline-block
+			font-size 2rem
+			margin 0 .3rem 
+			&:hover
+				color pineapple
+				transform scale(1.4)
+				transition all 0.7s ease-out
+	&__copyright
+		color watercolour
+		padding 0.5rem 0 4rem 0
+		text-align center
