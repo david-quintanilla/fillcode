@@ -13,6 +13,18 @@
 @import 'globals.styl'
 
 
+/**
+ * ---------------------------------------------------------------------------
+ * Module default message no found items
+ * ---------------------------------------------------------------------------
+ */
+.no__items
+	padding 2rem 0
+	p
+		background gray
+		border-radius 2px
+		color white
+		padding 2rem 1rem
 
 /**
  * ---------------------------------------------------------------------------
@@ -27,7 +39,9 @@
 		position absolute
 		right 1rem
 		top 1.5rem
-	&__section
+	&__sidebar
+		display none
+	&__logo
 		background platonic_nonsense
 		padding 1.5rem
 		position relative
@@ -53,27 +67,70 @@
 			list-style-type none
 			margin 0
 			padding 0
-		.menu__item
+		li
 			color white
-			padding 1rem 2rem
+			padding .7rem 1rem
 			&:first-child
 				margin 0
-				padding-top 1rem
+				padding-top .7rem
 			&:hover
-				background rgba(pineapple .9)
-				color black
+				background pineapple
 				transition all .5s ease
-			span
-				font-size 1rem
- 				
+			a
+				color white
+				display block
+				font-weight normal
+				text-decoration none
+				text-transform lowercase
+@media screen and (min-width: 800px)
+	.header
+		display flex
+		font-size 0
+		&__logo
+			font-size 1rem
+			width 50%
+		&__sidebar
+			background platonic_nonsense
+			color pineapple
+			display flex
+			font-size 1rem
+			text-align right 
+			width 50%
+			.search-form
+				padding 2.2rem 1rem 0 0
+				width 100%
+				.screen-reader-text
+					display none
+				input[type=submit]
+					background pineapple
+					border none
+					color black
+					padding .6rem 1rem
+					&:hover
+						background rgba(pineapple .7)
+						transition all 1s ease
+				input[type=search]
+					color gray
+					padding .4rem
+					width 50%
+		.icon-menu
+			display none
+		&__nav
+			display block
+			li
+				display inline-block
+
+
 /**
  * ---------------------------------------------------------------------------
- * Module post home page
+ * Module posts home page
  * ---------------------------------------------------------------------------
  */
 .container__posts
 	padding 1rem
 	.post
+		background rgba(black .1)
+		border-radius 5px
 		position relative
 		margin-bottom 2rem
 		&__header
@@ -89,17 +146,19 @@
 				padding .5rem
 				position absolute
 				right -.7rem
-				top -.7rem
+				top -.5rem
 				text-align center
 				width 3rem
 				z-index 8
 				span
 					display inline-block
 					font-size 1rem
-					margin-top .8rem
+					margin-top .5rem
 					margin-left -.1rem
 				&:hover
-					color white
+					background #eeeeee
+					text-decoration underline
+					cursor pointer
 					transition all .5s ease
 			.info
 				background rgba(black .5)
@@ -111,11 +170,12 @@
 				left 0 
 				right 0
 				.title
-					margin-top 4rem
+					margin-top 6rem
 					bottom 0
 					color white
 					font-size 1.5rem
 					font-weight 400
+					text-align center
 					text-transform uppercase
 				.author
 					color white
@@ -134,19 +194,35 @@
 			text-align center
 			margin 0
 			img
-				background cover
-				height auto
+				height 250px
 				width 100%
 				max-width 100%
 		&__footer
-			background rgba(black .1)
-			border-bottom-left-radius 5px
-			border-bottom-right-radius 5px
 			display block
 			margin 0
 			padding .5rem 1rem
-			.content
+			p
 				margin 0
+@media screen and (min-width: 480px)
+	.container__posts
+		align-items stretch
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		.no__items
+			padding 4rem
+			p
+				padding 1rem 4rem
+		.post
+			width 46%
+@media screen and (min-width: 800px)
+	.container__posts
+		.post
+			width 31%
+			.post__image img
+				height 325px
+
+
 /**
  * ---------------------------------------------------------------------------
  * Module footer home page
@@ -156,7 +232,6 @@
 	background platonic_nonsense
 	border-top 1rem solid pineapple
 	color watercolour
-	bottom 0
 	&__social
 		margin 0
 		padding 4rem 0 0 0
@@ -176,3 +251,123 @@
 		color watercolour
 		padding 0.5rem 0 4rem 0
 		text-align center
+@media screen and (min-width: 480px)
+	.footer
+		position absolute
+		width 100%
+@media screen and (min-width: 800px)
+	.footer
+		position relative
+
+
+
+/**
+ * ---------------------------------------------------------------------------
+ * Module single page
+ * ---------------------------------------------------------------------------
+ */
+.container__single
+	.container__post
+		.post
+			padding 0 1rem
+			text-align left
+			img
+				width auto
+				height auto
+			.post__title
+				color gray
+				font-size 2rem
+				text-transform uppercase
+			p
+				text-align left !important
+			ul > li
+				padding-bottom 1.2rem
+		.post__comments
+			padding 1rem
+	.container__form
+		padding 1rem
+		font-size 1.2rem
+		.form__title
+			color gray
+		.form__item
+			position relative
+			.form-icon
+				background gray
+				bottom 0
+				color white
+				display block
+				font-size 1.2rem
+				padding-top .4rem
+				position absolute
+				top 0
+				text-align center
+				width 2rem
+			input
+				border 1px solid gray
+				border-top-right-radius 2px
+				border-bottom-right-radius 2px
+				color rgba(black .8)
+				padding .3rem 2.2rem
+				width 100%
+			textarea
+				border-radius 2px
+				color rgba(black .8)
+				width 100%
+		p > input[type=submit]
+			background platonic_nonsense
+			border none
+			color white
+			font-weight normal
+			padding .5rem 1rem
+			&:hover
+				background pineapple
+				color black
+				transition all 1s ease	
+	.container__sidebars
+			display none
+			background rgba(gray .1)
+			border-left 2px solid gray
+			width 25%
+			.aside__info
+				color gray
+				font-size 1.5rem
+				padding 2rem 1rem 0 1rem
+				position relative
+				width 100%
+				ul:after
+					content ''
+					background gray
+					width 100%
+					display block
+					height 15px
+					position absolute
+					left 0
+				ul
+					list-style-type square
+					margin-top 0
+					padding-bottom 1rem
+					a
+						text-decoration none
+						color black
+						font-size 1rem
+					a:hover
+						text-decoration underline
+					li:last-child
+						margin-bottom 2rem
+@media screen and (min-width: 800px)
+	.container__single
+		display flex
+		.container__post
+			width 75%
+			.post
+				font-size 1.2rem
+				width 90%
+			.post__comments
+				width 95%
+		.container__sidebars
+			display flex
+		.container__form
+			padding-left 2rem
+			width 75%
+			.form__item input, .form__item textarea 
+				width 80%

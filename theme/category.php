@@ -1,7 +1,6 @@
 
-<!-- header website -->
-<?php get_header() ?>
 
+<?php get_header() ?>
 
 	<!-- content website -->
 	<section class="container__posts">
@@ -28,23 +27,23 @@
 
 						<div class="author">
 							<span class="icon-user"></span> 
-							<?php the_author() ?> - <?php the_date('d/m/Y') ?>
+							<?php the_author() ?> - <?php the_date('d-m-Y') ?>
 						</div>
 					</div>
 				</header>
 
-				<footer class="post__footer"> <?= the_excerpt() ?> </footer>
+				<footer class="post__footer">
+					<?= the_excerpt() ?>
+				</footer>
 			</article>
 		<?php endwhile ?>
 		<!-- post navigation -->
 		<?php else: ?>
 			<div class="no__items">
-				<p>No existen posts</p>
+				<p>No se han encontrado coincidencias</p>
 			</div>
 		<?php endif ?>
 
 	</section>
 
-
-<!-- footer website -->
 <?php get_footer() ?>

@@ -1,48 +1,28 @@
 
 <?php get_header() ?>
 
+	<section class="container__single">
+		<section class="container__post">	
+			<!-- content post -->
+			<section class="post">
+				<h2 class="post__title"><?php single_post_title() ?></h2>
+				<?php the_content() ?>
+			</section>
 
-	<!-- content website -->
-	<section class="container__posts">
+			<hr>
 
-		<?php if(have_posts()) : while (have_posts()) : the_post() ?>
-			<article class="post">
-				<header class="post__header">				
-					<div class="type"> 
-						<?php $categories = get_the_category() ?>
-						
-						<?php foreach($categories as $category): ?>		
-							<span> 
-								<?= $category->name ?> 
-							</span>
-						<?php endforeach ?> 
-					</div>
+			<!-- comments and form add comment -->
+			<section class="post__comments">
+				<?php disqus_comments('httpfillcodecom') ?>
+			</section>
+		</section>
 
-					<figure class="post__image"> <?= the_post_thumbnail('medium') ?> </figure>
-
-					<div class="info">
-						<h2 class="title"> <?php the_title() ?> </h2>
-
-						<a href="<?php the_permalink() ?>" class="link"></a>
-
-						<div class="author">
-							<span class="icon-user"></span> 
-							<?php the_author() ?> - <?php the_date('d-m-Y') ?>
-						</div>
-					</div>
-				</header>
-
-				<footer class="post__footer">
-					<p class="content"> <?php the_content() ?></p>
-				</footer>
-			</article>
-		<?php endwhile ?>
-		<!-- post navigation -->
-		<?php else: ?>
-		<!-- no posts found -->
-		<?php endif ?>
-
+		<!-- information best post, most visited, etc -->
+		<section class="container__sidebars">		
+			<aside class="aside__info">
+				<?php dynamic_sidebar('sidebar-right') ?>
+			</aside>
+		</section>
 	</section>
-
 
 <?php get_footer() ?>
