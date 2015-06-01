@@ -21,7 +21,7 @@
 .no__items
 	padding 2rem 0
 	p
-		background gray
+		background pineapple
 		border-radius 2px
 		color white
 		padding 2rem 1rem
@@ -32,17 +32,42 @@
  * ---------------------------------------------------------------------------
  */
 .header
+	background platonic_nonsense
+	color pineapple
 	position relative
 	.icon-menu
-		color pineapple
 		font-size 3rem
 		position absolute
 		right 1rem
 		top 1.5rem
 	&__sidebar
+		color pineapple
 		display none
+		font-size 1rem
+		text-align right 
+		width 50%
+		.search-form
+			display none
+			padding 2.2rem 1rem 0 0
+			position relative
+			width 100%
+			.screen-reader-text
+				display none
+			input[type=submit]
+				background pineapple
+				border 2px solid pineapple
+				color platonic_nonsense
+				padding .6rem 1rem
+			input[type=search]
+				border none
+				color black
+				height 2rem
+				opacity .4
+				padding .4rem
+				width 50%
+				&:focus
+					opacity .6	
 	&__logo
-		background platonic_nonsense
 		padding 1.5rem
 		position relative
 		.title
@@ -50,7 +75,7 @@
 			font-size 2rem
 			margin 0
 		.legend
-			color rgba(almost_white .7)
+			color white
 			margin 0
 		.link
 			display block
@@ -60,8 +85,9 @@
 			width 200px
 			z-index 10
 	&__nav
+		background rgba(platonic_nonsense .7)
 		display none
-		background rgba(black .7)
+		padding-left 1rem
 		.menu
 			font-weight bold
 			list-style-type none
@@ -73,52 +99,35 @@
 			&:first-child
 				margin 0
 				padding-top .7rem
-			&:hover
-				background pineapple
-				transition all .5s ease
 			a
 				color white
 				display block
 				font-weight normal
 				text-decoration none
-				text-transform lowercase
+				text-transform capitalize
 @media screen and (min-width: 800px)
 	.header
 		display flex
 		font-size 0
 		&__logo
+			color platonic_nonsense
 			font-size 1rem
 			width 50%
 		&__sidebar
-			background platonic_nonsense
-			color pineapple
 			display flex
-			font-size 1rem
-			text-align right 
-			width 50%
 			.search-form
-				padding 2.2rem 1rem 0 0
-				width 100%
-				.screen-reader-text
-					display none
-				input[type=submit]
-					background pineapple
-					border none
-					color black
-					padding .6rem 1rem
-					&:hover
-						background rgba(pineapple .7)
-						transition all 1s ease
-				input[type=search]
-					color gray
-					padding .4rem
-					width 50%
+				display block
 		.icon-menu
 			display none
 		&__nav
+			background platonic_nonsense
 			display block
 			li
+				border-top 2px solid transparent
 				display inline-block
+				&:hover
+					border-top 2px solid pineapple
+					transition all .5s ease
 
 
 /**
@@ -129,18 +138,35 @@
 .container__posts
 	padding 1rem
 	.post
-		background rgba(black .1)
+		background white
 		border-radius 5px
+		border 2px solid watercolour
 		position relative
 		margin-bottom 2rem
+		&__info
+			border-bottom 1px solid gray
+			color gray
+			padding-left 1rem
+			a
+				position absolute
+				top 0 
+				bottom 0
+				left 0
+				right 0
 		&__header
-			font-size 0
+			background watercolour
 			margin 0
+			padding .6rem 1rem
 			position relative
+			color white
+			.title
+				font-size 1rem
+				font-weight 400
+				margin 0
 			.type
 				background white
 				border-radius 50%
-				color platonic_nonsense
+				color watercolour
 				font-weight bold
 				height 3rem
 				padding .5rem
@@ -160,42 +186,14 @@
 					text-decoration underline
 					cursor pointer
 					transition all .5s ease
-			.info
-				background rgba(black .5)
-				color white
-				padding .5rem 1rem
-				position absolute
-				bottom 0
-				top 0
-				left 0 
-				right 0
-				.title
-					margin-top 6rem
-					bottom 0
-					color white
-					font-size 1.5rem
-					font-weight 400
-					text-align center
-					text-transform uppercase
-				.author
-					color white
-					font-size 1rem
-					bottom .5rem
-					right 1rem
-					position absolute
-					z-index 20
-				.link
-					position absolute
-					bottom 0
-					top 0
-					left 0 
-					right 0
 		&__image
 			text-align center
 			margin 0
+			padding .5rem 0
 			img
-				height 250px
-				width 100%
+				border-radius 2rem
+				height 200px
+				width 80%
 				max-width 100%
 		&__footer
 			display block
@@ -219,8 +217,6 @@
 	.container__posts
 		.post
 			width 31%
-			.post__image img
-				height 325px
 
 
 /**
@@ -230,25 +226,24 @@
  */
 .footer
 	background platonic_nonsense
-	border-top 1rem solid pineapple
 	color watercolour
 	&__social
 		margin 0
 		padding 4rem 0 0 0
 		text-align center
 		a
-			color white
+			color pineapple
 			text-decoration none
 		span
 			display inline-block
-			font-size 2rem
+			font-size 3rem
 			margin 0 .3rem 
 			&:hover
 				color pineapple
 				transform scale(1.4)
 				transition all 0.7s ease-out
 	&__copyright
-		color watercolour
+		color pineapple
 		padding 0.5rem 0 4rem 0
 		text-align center
 @media screen and (min-width: 480px)
@@ -275,11 +270,14 @@
 				width auto
 				height auto
 			.post__title
-				color gray
+				color black
 				font-size 2rem
 				text-transform uppercase
 			p
 				text-align left !important
+				a > img
+					width auto
+					height auto
 			ul > li
 				padding-bottom 1.2rem
 		.post__comments
@@ -288,11 +286,11 @@
 		padding 1rem
 		font-size 1.2rem
 		.form__title
-			color gray
+			color black
 		.form__item
 			position relative
 			.form-icon
-				background gray
+				background pineapple
 				bottom 0
 				color white
 				display block
@@ -314,38 +312,36 @@
 				color rgba(black .8)
 				width 100%
 		p > input[type=submit]
-			background platonic_nonsense
+			background pineapple
 			border none
 			color white
 			font-weight normal
 			padding .5rem 1rem
-			&:hover
-				background pineapple
-				color black
-				transition all 1s ease	
 	.container__sidebars
 			display none
-			background rgba(gray .1)
-			border-left 2px solid gray
+			margin 1rem 0
 			width 25%
 			.aside__info
-				color gray
-				font-size 1.5rem
-				padding 2rem 1rem 0 1rem
-				position relative
+				border-left 1px solid gray
+				color white
+				font-size 1rem
+				padding 2rem .5rem
 				width 100%
-				ul:after
-					content ''
-					background gray
-					width 100%
-					display block
-					height 15px
-					position absolute
-					left 0
+				position relative
+				.title
+					background watercolour
+					font-size 1rem
+					font-weight normal
+					margin 0
+					padding 1rem .5rem
 				ul
+					border 1px solid watercolour
+					color watercolour
 					list-style-type square
-					margin-top 0
-					padding-bottom 1rem
+					margin 0
+					margin-bottom 1rem
+					padding 1rem 2rem
+					position relative
 					a
 						text-decoration none
 						color black

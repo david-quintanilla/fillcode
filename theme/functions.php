@@ -54,8 +54,8 @@ function my_sidebars()
 		'class'         =>	'',
 		'before_widget' =>	'',
 		'after_widget'  =>	'',
-		'before_title'  =>	'',
-		'after_title'   =>	''
+		'before_title'  =>	'<h2 class="title">',
+		'after_title'   =>	'</h2>'
 	]);
 
 	register_sidebar([
@@ -94,4 +94,24 @@ function disqus_comments($disqus_shortname)
         var disqus_identifier = "'.$disqus_shortname.'-'.$post->ID.'";
     </script>';
 }
+
+
+/**
+ * ---------------------------------------------------------------------------
+ * Filter post search
+ * ---------------------------------------------------------------------------
+ */
+function SearchFilter($query) 
+{
+	if($query->is_search) 
+	{
+		$query->set('post_type', 'post');
+	}
+
+	return $query;
+}
+ 
+add_filter('pre_get_posts','SearchFilter');
+ 
+
 

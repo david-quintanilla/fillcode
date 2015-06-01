@@ -8,7 +8,9 @@
 
 		<?php if(have_posts()) : while (have_posts()) : the_post() ?>
 			<article class="post">
-				<header class="post__header">				
+				<header class="post__header">	
+					<h2 class="title"> <?php the_title() ?> </h2>
+
 					<div class="type"> 
 						<?php $categories = get_the_category() ?>
 						
@@ -18,20 +20,18 @@
 							</span>
 						<?php endforeach ?> 
 					</div>
-
-					<figure class="post__image"> <?= the_post_thumbnail('medium') ?> </figure>
-
-					<div class="info">
-						<h2 class="title"> <?php the_title() ?> </h2>
-
-						<a href="<?php the_permalink() ?>" class="link"></a>
-
-						<div class="author">
-							<span class="icon-user"></span> 
-							<?php the_author() ?> - <?php the_date('d/m/Y') ?>
-						</div>
-					</div>
 				</header>
+
+				<figure class="post__image"> <?= the_post_thumbnail('medium') ?> </figure>
+
+				<div class="post__info">
+					<a href="<?php the_permalink() ?>" class="link"> </a>
+
+					<div class="author">
+						<span class="icon-user"></span> 
+						<?php the_author() ?> - <?php the_date('d/m/Y') ?>
+					</div>
+				</div>
 
 				<footer class="post__footer"> <?= the_excerpt() ?> </footer>
 			</article>
