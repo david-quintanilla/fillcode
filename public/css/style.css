@@ -786,7 +786,7 @@ body {
   padding: 2rem 0;
 }
 .no__items p {
-  background: #4c94b0;
+  background: #f3bd24;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   color: #fff;
@@ -799,7 +799,7 @@ body {
  */
 .header {
   background: #2b5464;
-  color: #6dd5fd;
+  color: #f3bd24;
   position: relative;
 }
 .header .icon-menu {
@@ -809,7 +809,7 @@ body {
   top: 1.5rem;
 }
 .header__sidebar {
-  color: #6dd5fd;
+  color: #f3bd24;
   display: none;
   font-size: 1rem;
   text-align: right;
@@ -825,8 +825,8 @@ body {
   display: none;
 }
 .header__sidebar .search-form input[type=submit] {
-  background: #6dd5fd;
-  border: 2px solid #6dd5fd;
+  background: #f3bd24;
+  border: 2px solid #f3bd24;
   color: #2b5464;
   padding: 0.6rem 1rem;
 }
@@ -846,11 +846,11 @@ body {
   filter: alpha(opacity=60);
 }
 .header__logo {
-  padding: 1rem 0 0 1rem;
+  padding: 1.5rem;
   position: relative;
 }
 .header__logo .title {
-  color: #6dd5fd;
+  color: #f3bd24;
   font-size: 2rem;
   margin: 0;
 }
@@ -926,11 +926,11 @@ body {
     display: block;
   }
   .header__nav li {
-    border-bottom: 5px solid transparent;
+    border-top: 2px solid transparent;
     display: inline-block;
   }
   .header__nav li:hover {
-    border-bottom: 5px solid #6dd5fd;
+    border-top: 2px solid #f3bd24;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -950,7 +950,7 @@ body {
   background: #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  border: 2px solid #5c747d;
+  border: 2px solid #5d8396;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -967,7 +967,7 @@ body {
   right: 0;
 }
 .container__posts .post__header {
-  background: #5c747d;
+  background: #5d8396;
   margin: 0;
   padding: 0.6rem 1rem;
   position: relative;
@@ -982,7 +982,7 @@ body {
   background: #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  color: #5c747d;
+  color: #5d8396;
   font-weight: bold;
   height: 3rem;
   padding: 0.5rem;
@@ -1015,10 +1015,10 @@ body {
   padding: 0.5rem 0;
 }
 .container__posts .post__image img {
-  -webkit-border-radius: 1rem;
-  border-radius: 1rem;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
   height: 200px;
-  width: 90%;
+  width: 80%;
   max-width: 100%;
 }
 .container__posts .post__footer {
@@ -1078,7 +1078,7 @@ body {
  */
 .footer {
   background: #2b5464;
-  color: #5c747d;
+  color: #5d8396;
 }
 .footer__social {
   margin: 0;
@@ -1086,7 +1086,7 @@ body {
   text-align: center;
 }
 .footer__social a {
-  color: #6dd5fd;
+  color: #f3bd24;
   text-decoration: none;
 }
 .footer__social span {
@@ -1095,7 +1095,7 @@ body {
   margin: 0 0.3rem;
 }
 .footer__social span:hover {
-  color: #6dd5fd;
+  color: #f3bd24;
   -webkit-transform: scale(1.4);
   -moz-transform: scale(1.4);
   -o-transform: scale(1.4);
@@ -1108,7 +1108,7 @@ body {
   transition: all 0.7s ease-out;
 }
 .footer__copyright {
-  color: #6dd5fd;
+  color: #f3bd24;
   padding: 0.5rem 0 4rem 0;
   text-align: center;
 }
@@ -1135,7 +1135,6 @@ body {
 .container__single .container__post .post img {
   width: auto;
   height: auto;
-  max-width: 100%;
 }
 .container__single .container__post .post .post__title {
   color: #000;
@@ -1166,7 +1165,7 @@ body {
   position: relative;
 }
 .container__single .container__form .form__item .form-icon {
-  background: #4c94b0;
+  background: #f3bd24;
   bottom: 0;
   color: #fff;
   display: block;
@@ -1192,7 +1191,7 @@ body {
   width: 100%;
 }
 .container__single .container__form p > input[type=submit] {
-  background: #4c94b0;
+  background: #f3bd24;
   border: none;
   color: #fff;
   font-weight: normal;
@@ -1212,15 +1211,15 @@ body {
   position: relative;
 }
 .container__single .container__sidebars .aside__info .title {
-  background: #5c747d;
+  background: #5d8396;
   font-size: 1rem;
   font-weight: normal;
   margin: 0;
   padding: 1rem 0.5rem;
 }
 .container__single .container__sidebars .aside__info ul {
-  border: 1px solid #5c747d;
-  color: #5c747d;
+  border: 1px solid #5d8396;
+  color: #5d8396;
   list-style-type: square;
   margin: 0;
   margin-bottom: 1rem;
