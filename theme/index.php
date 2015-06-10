@@ -22,7 +22,7 @@
 					</div>
 				</header>
 
-				<figure class="post__image"> <?= the_post_thumbnail('medium') ?> </figure>
+				<figure class="post__image"> <?= the_post_thumbnail('full') ?> </figure>
 
 				<div class="post__info">
 					<a href="<?php the_permalink() ?>" class="link"> </a>

@@ -17,8 +17,9 @@
 	<!-- header the website -->
 	<header class="header">
 		<section class="header__logo">
-			<h1 class="title"> <?php bloginfo('name') ?> </h1>
-			<p class="legend"> <?php bloginfo('description') ?> </p>
+			<h1 class="title"> 
+				<img name="logo" src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="<?php bloginfo('name'); ?>" />
+			</h1>
 			<a href="<?= home_url() ?>" class="link"></a>
 		</section>
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SwatchLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Throwback" xmlns="http://schemas.microsoft.com/expression/design/2007">
-	<SolidColorSwatch Color="#FF301921" />
-	<SolidColorSwatch Color="#FF86C2B8" />
-	<SolidColorSwatch Color="#FF495354" />
-	<SolidColorSwatch Color="#FF3A3A3A" />
-	<SolidColorSwatch Color="#FFFC9F37" />
-</SwatchLibrary>
