@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SwatchLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Acid Pool" xmlns="http://schemas.microsoft.com/expression/design/2007">
-	<SolidColorSwatch Color="#FF152530" />
-	<SolidColorSwatch Color="#FFB0FF1C" />
-	<SolidColorSwatch Color="#FF008748" />
-	<SolidColorSwatch Color="#FF16AD6A" />
-	<SolidColorSwatch Color="#FF89BA7A" />
-</SwatchLibrary>
